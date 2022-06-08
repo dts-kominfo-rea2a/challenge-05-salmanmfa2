@@ -10,7 +10,7 @@ const sorter = (nameArray,cbSort) =>{
   const sortedArray = cbSort(nameArray);
   const arrayResult =[];
   for (let index = 0; index < sortedArray.length; index++) {
-    arrayResult.push(`${index + 1}. `+sortedArray[index]);
+    arrayResult.push((index + 1)+". "+sortedArray[index]);
     
   }
   return arrayResult;
